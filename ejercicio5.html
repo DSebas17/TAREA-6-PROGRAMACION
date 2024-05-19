@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 5</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+
+<body>
+    
+<main>
+
+    <header>
+        <img src="img/logo.png" alt="logo" height="70px">
+    </header>
+    <h1>CASOS PRACTICOS DE CONDICIONALES ANIDADAS</h1>
+
+
+    <div id="solucion">
+
+        <script>
+            // Declaracion de variables
+            var edad,niv_hemoglobina,resultado;
+
+            // fase de lectura / estructura
+
+            edad=parseInt(prompt("INGRESA LA EDAD CORRESPONDIENTE EN MESES (1 AÑO = 12 MESES)"));
+            niv_hemoglobina=parseInt(prompt("Nivel de Hemoglobina"));
+
+            //fase procesamientos de datos
+
+            if (edad >= 0 && edad <= 1) {
+                if (niv_hemoglobina < 13) resultado = "Positivo en anemia";
+                else resultado = "Negativo en anemia";
+            } else if (edad > 1 && edad <= 6) {
+                if (niv_hemoglobina < 10) resultado = "Positivo en anemia";
+                else resultado = "Negativo en anemia";
+            } else if (edad > 6 && edad <= 12) {
+                if (niv_hemoglobina < 11) resultado = "Positivo en anemia";
+                else resultado = "Negativo en anemia";
+            } else if (edad > 12 && edad <= 60) {
+                if (niv_hemoglobina < 11.5) resultado = "Positivo en anemia";
+                else resultado = "Negativo en anemia";
+            } else if (edad > 60 && edad <= 120) {
+                if (niv_hemoglobina < 12.6) resultado = "Positivo en anemia";
+                else resultado = "Negativo en anemia";
+            } else if (edad > 120 && edad <= 180) {
+                if (niv_hemoglobina < 13) resultado = "Positivo en anemia";
+                else resultado = "Negativo en anemia";
+            } else {
+                resultado = "Edad fuera del rango de evaluación.";
+            }
+
+           if (condition) {
+            
+           } else {
+            
+           }
+            //Fase de Salida
+            document.write("=============PROMEDIO DE NOTAS============="+"<br>");
+            document.write("<br>");
+            document.write("Resultados de la evaluacion: "+resultado+ "<br>");
+            document.write("<br>");
+            document.write("=============EJERCICIO 5=============");
+
+
+
+        </script>
+    </div>
+   
+</main>
+
+
+</body>
+</html>

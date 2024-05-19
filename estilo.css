@@ -1,0 +1,27 @@
+main{
+   border: 1px solid red; 
+   width: 85%;
+   margin: 30px;
+   padding: 10px;
+   background-color: bisque;
+   text-align: center;
+   
+}
+
+h1{
+    text-align: center;
+    color: #00a0e6;
+    
+}
+
+
+#solucion{
+    height: 200px;
+    border: solid 1px green;
+    width: 75%;
+    margin: auto;
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}

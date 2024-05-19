@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 3</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+
+<body>
+    
+<main>
+
+    <header>
+        <img src="img/logo.png" alt="logo" height="70px">
+    </header>
+    <h1>CASOS PRACTICOS DE CONDICIONALES ANIDADAS</h1>
+
+
+    <div id="solucion">
+
+        <script>
+            // Declaracion de variables
+            var precio_kilo,cantidad_kilos, descuento,total;
+
+            // fase de lectura / estructura
+
+            cantidad_kilos=parseInt(prompt("Ingresa la cantidad de kilos de manzanas a comprar"));
+            precio_kilo= parseInt(prompt("Ingresa el precio por kilo de manzana"));
+            descuento
+
+
+            //fase procesamientos de datos
+
+
+            //Fase de salida
+            if (cantidad_kilos>10) {
+                descuento=0.20;
+            } else {
+                if (cantidad_kilos>5) {
+                    descuento=0.15;
+                } else {
+                    if (cantidad_kilos>2) {
+                        descuento=0.10;
+                    } else {
+                        descuento=0.00;
+                    }
+                }
+            }
+
+            total=cantidad_kilos*precio_kilo;
+            prefio_fin= total - (total * descuento);
+
+            //Fase de Salida
+
+            document.write("Cantidad de kilos de manzana: "+cantidad_kilos+ "<br>");
+            document.write("Precio por kilo: "+precio_kilo+ "<br>");
+            document.write("Descuento: "+descuento*100+ "%<br>");
+            document.write("Precio sin descuento: " +total+ "<br>");
+            document.write("Precio final mas el respectivo descuento: " +prefio_fin+ "<br>");
+
+
+        </script>
+    </div>
+   
+</main>
+
+
+</body>
+</html>

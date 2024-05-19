@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 4</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+
+<body>
+    
+<main>
+
+    <header>
+        <img src="img/logo.png" alt="logo" height="70px">
+    </header>
+    <h1>CASOS PRACTICOS DE CONDICIONALES ANIDADAS</h1>
+
+
+    <div id="solucion">
+
+        <script>
+            // Declaracion de variables
+            var nota1,nota2,nota3,nota4,n_eliminada,promedio;
+
+            // fase de lectura / estructura
+
+            nota1=parseInt(prompt("Ingresa la 1RA NOTA"));
+            nota2=parseInt(prompt("Ingresa la 2DA NOTA"));
+            nota3=parseInt(prompt("Ingresa la 3RA NOTA"));
+            nota4=parseInt(prompt("Ingresa la 4TA NOTA"));
+
+            //fase procesamientos de datos
+            n_eliminada=Math.min(nota1,nota2,nota3,nota4);
+            promedio= (nota1+nota2+nota3+nota4 - n_eliminada)/3;
+
+
+            //Fase de Salida
+            document.write("=============PROMEDIO DE NOTAS============="+"<br>");
+            document.write("<br>");
+            document.write("La nota menor y que se elimimó es: "+n_eliminada+ "<br>");
+            document.write("El promedio final es: "+promedio.toFixed(2)+ "<br>");
+            document.write("<br>");
+            document.write("=============EJERCICIO 4=============");
+
+
+
+        </script>
+    </div>
+   
+</main>
+
+
+</body>
+</html>

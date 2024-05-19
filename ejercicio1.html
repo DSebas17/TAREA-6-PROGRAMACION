@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 1</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+
+<body>
+    
+<main>
+
+    <header>
+        <img src="img/logo.png" alt="logo" height="70px">
+    </header>
+    <h1>CASOS PRACTICOS DE CONDICIONALES ANIDADAS</h1>
+
+
+    <div id="solucion">
+
+        <script>
+            // Declaracion de variables
+            var cantidad,precio_unico;
+
+            // fase de lectura / estructura
+
+            cantidad=parseInt(prompt("Ingresa la cantidad de llantas a comprar"));
+
+            //fase procesamientos de datos
+
+
+            //Fase de salida
+
+            if (cantidad<5) {
+                precio_unico=30000;
+            } else {
+                if (cantidad >=10 && cantidad <= 10) {
+                    precio_unico= 25000
+                } else {
+                  precio_unico=20000  
+                }
+            }
+
+            total= cantidad*precio_unico;
+
+            //Fase de Salida
+
+            document.write("Precio por llanta segun la cantidad a comprar: "+cantidad+ "<br>");
+           
+            document.write("Precio total a pagar: S/"+total+ "<br>");
+
+
+        </script>
+    </div>
+   
+</main>
+
+
+</body>
+</html>

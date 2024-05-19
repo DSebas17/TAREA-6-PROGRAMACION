@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 2</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+
+<body>
+    
+<main>
+
+    <header>
+        <img src="img/logo.png" alt="logo" height="70px">
+    </header>
+    <h1>CASOS PRACTICOS DE CONDICIONALES ANIDADAS</h1>
+
+
+    <div id="solucion">
+
+        <script>
+            // Declaracion de variables
+            var defectuosos,producidos,eficiencia
+
+            // fase de lectura / estructura
+
+            defectuosos=parseInt(prompt("Ingresa la cantidad de tornillos defectuosos"));
+            producidos=parseInt(prompt("Ingresa la cantidad de tornillos producidos"));
+
+
+            //fase procesamientos de datos
+
+
+            //Fase de salida
+
+            if (defectuosos<200 && producidos>10000) {
+                eficiencia=8;
+            } else {
+                if (defectuosos>200) {
+                    eficiencia=6;
+                } else {
+                    if (producidos> 10000) {
+                        eficiencia=7;
+                    } else {
+                        eficiencia=5;
+                    }
+                }
+            }
+
+            //Fase de Salida
+
+            document.write("Grado de eficiencia: "+eficiencia+ "<br>");
+
+        </script>
+    </div>
+   
+</main>
+
+
+</body>
+</html>
